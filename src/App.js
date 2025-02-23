@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import MainAppRouter from "./components/MainAppRouter";
+import {Provider} from "react-redux";
+import {store} from "./store";
 
 function App() {
     const [message, setMessage] = useState("");
@@ -11,10 +14,11 @@ function App() {
     }, []);
 
     return (
-        <div>
-            <h1>React + Node.js</h1>
-            <p>Backend says: {message}</p>
-        </div>
+        <Provider store={store}>
+            <div className="hartetoti-app-container">
+                <MainAppRouter />
+            </div>
+        </Provider>
     );
 }
 
