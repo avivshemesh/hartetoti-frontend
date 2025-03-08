@@ -4,5 +4,8 @@ export default [
     index("routes/home.tsx"),
     ...prefix('login', [
         index('routes/Login/index.tsx')
+    ]),
+    ...prefix('register', [
+        index('routes/Register/index.tsx')
     ])
 ] satisfies RouteConfig;

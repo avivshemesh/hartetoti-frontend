@@ -1,14 +1,13 @@
 import LoginForm from '~/components/LoginForm';
-import type { Route } from '../+types/home';
 
-export function meta({}: Route.MetaArgs) {
-  return [
-    { title: 'New React Router App' },
-    { name: 'description', content: 'Welcome to React Router!' },
-  ];
-}
+// export function meta({ }: Route.MetaArgs) {
+//   return [
+//     { title: 'New React Router App' },
+//     { name: 'description', content: 'Welcome to React Router!' },
+//   ];
+// }
 
-export default function Home() {
+export default function LoginPage() {
   return (
     <div className='login-page min-h-screen flex flex-col justify-center items-center'>
       <div className='login-page__content'>

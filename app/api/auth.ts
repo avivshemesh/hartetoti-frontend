@@ -1,5 +1,6 @@
 import { post } from "./base";
 
 export default {
-    login: (data: any) => post('/login', data)
+    login: (body: any) => post('auth/login', body),
+    register: (body: any) => post('auth/register', body)
 }
