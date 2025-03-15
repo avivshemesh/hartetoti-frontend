@@ -9,7 +9,7 @@ import {
 
 import type { Route } from "./+types/root";
 import "./app.css";
-import AppHeader from "./components/Layout/AppHeader";
+import AppHeader from "./components/Layout/AppHeader/AppHeader";
 
 export const links: Route.LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -32,11 +32,16 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <Meta />
         <Links />
+        <link rel="icon" href="hartetoti-logo.png" />
         <title>Hartetoti</title>
       </head>
       <body>
-        <AppHeader />
-        {children}
+        <div id="app-container" className="flex h-[100%] flex-col">
+          <AppHeader />
+          <div id="app-content" className="flex-1">
+            {children}
+          </div>
+        </div>
         <ScrollRestoration />
         <Scripts />
       </body>
@@ -65,11 +70,11 @@ export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
   }
 
   return (
-    <main className="pt-16 p-4 container mx-auto">
+    <main className="container mx-auto p-4 pt-16">
       <h1>{message}</h1>
       <p>{details}</p>
       {stack && (
-        <pre className="w-full p-4 overflow-x-auto">
+        <pre className="w-full overflow-x-auto p-4">
           <code>{stack}</code>
         </pre>
       )}

@@ -1,4 +1,4 @@
-import LoginForm from '~/components/LoginForm';
+import LoginForm from "~/components/LoginForm/LoginForm";
 
 // export function meta({ }: Route.MetaArgs) {
 //   return [
@@ -9,9 +9,9 @@ import LoginForm from '~/components/LoginForm';
 
 export default function LoginPage() {
   return (
-    <div className='login-page min-h-screen flex flex-col justify-center items-center'>
-      <div className='login-page__content'>
-        <h2 className='text-xl mb-4 font-semibold'>Login</h2>
+    <div className="login-page flex flex-col items-center justify-center">
+      <div className="login-page__content">
+        <h2 className="text-center text-4xl font-semibold text-white">Login</h2>
         <LoginForm />
       </div>
     </div>

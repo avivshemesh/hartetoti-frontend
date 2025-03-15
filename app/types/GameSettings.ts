@@ -1,5 +1,5 @@
 export interface GameSettings {
-    gameMode: string;
-    secondsPerQuestion: number;
-    questionCount: number
+  gameMode: string;
+  secondsPerQuestion: number;
+  questionCount: number;
 }

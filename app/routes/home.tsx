@@ -1,4 +1,4 @@
-import LoggedInUserDashboard from "~/components/LoggedInUserDashboard";
+import LoggedInUserDashboard from "~/components/LoggedInUserDashboard/LoggedInuserDashboard";
 
 // export function meta({}: Route.MetaArgs) {
 //   return [

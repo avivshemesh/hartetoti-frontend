@@ -1,4 +1,18 @@
 :root {
-    --header-height: 72px;
-    --min-page-height: calc(100vh - var(--header-height));
+  --header-height: 72px;
+  --max-content-width: 1024px;
+
+  /* Primary Color */
+  --color-orange: #ff7f11;
+
+  /* Orange Variations */
+  --color-deep-orange: #ff5400;
+  --color-soft-orange: #ffa94d;
+  --color-peachy-orange: #ffc285;
+
+  /* Supporting Colors */
+  --color-yellow: #ffd700;
+  --color-aqua-blue: #00c4cc;
+  --color-bubblegum-pink: #ff66b2;
+  --color-bright-purple: #a55eea;
 }

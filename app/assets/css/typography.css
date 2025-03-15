@@ -1,0 +1,47 @@
+@font-face {
+  font-family: "SourGummy";
+  src: url("../fonts/SourGummy/SourGummy-Thin.ttf");
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: "SourGummy";
+  src: url("../fonts/SourGummy/SourGummy-ExtraLight.ttf");
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: "SourGummy";
+  src: url("../fonts/SourGummy/SourGummy-Light.ttf");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "SourGummy";
+  src: url("../fonts/SourGummy/SourGummy-Regular.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "SourGummy";
+  src: url("../fonts/SourGummy/SourGummy-Medium.ttf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "SourGummy";
+  src: url("../fonts/SourGummy/SourGummy-SemiBold.ttf");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "SourGummy";
+  src: url("../fonts/SourGummy/SourGummy-Bold.ttf");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "SourGummy";
+  src: url("../fonts/SourGummy/SourGummy-ExtraBold.ttf");
+  font-weight: 800;
+}
