@@ -1,6 +1,7 @@
 @import "tailwindcss";
 @import "./assets/css/variables.css";
 @import "./assets/css/typography.css";
+@import "./assets/css/keyframes.css";
 
 @theme {
   --font-sans:
@@ -18,8 +19,14 @@ body {
 }
 
 html {
-  background-color: var(--color-orange);
-  background-size: cover;
+  /* background-color: var(--color-orange);
+  background-size: cover; */
+  background: rgb(255, 127, 17);
+  background: radial-gradient(
+    circle,
+    rgba(255, 127, 17, 1) 50%,
+    rgb(255, 149, 36) 100%
+  );
 }
 
 #app-content > * {
