@@ -25,7 +25,7 @@ const LoginForm = () => {
     handleSubmit,
     formState: { errors },
   } = useForm({
-    resolver: zodResolver(schema)
+    resolver: zodResolver(schema),
   });
 
   const onSubmit = async (data: { email: string; password: string }) => {
@@ -76,10 +76,14 @@ const LoginForm = () => {
         }
       />
 
-      {serverError && <p className="mb-4 text-red-800 animate--fade-in-slide-from-top">{serverError}</p>}
+      {serverError && (
+        <p className="animate--fade-in-slide-from-top mb-4 text-red-800">
+          {serverError}
+        </p>
+      )}
 
       <HartetotiButton type="submit" className="w-full">
-        {isLoading ? <CircularProgress size={16} /> : "Login"}
+        {isLoading ? <CircularProgress size={16} color="inherit" /> : "Login"}
       </HartetotiButton>
 
       <p className="mt-4 flex justify-center gap-2">
